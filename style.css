@@ -1,0 +1,63 @@
+body {
+	background-color: #e81176 ;
+}
+
+.hyperloophelloword {
+	width: 100%;
+	text-align: center;
+	margin: 3em 0 3em 0;
+}
+
+
+.hyperloophelloword img {
+	margin-bottom: 2em;
+	width: 15%;
+}
+
+h1 {
+	margin-top: 1em;
+	color: white;
+}
+
+h3 {
+	color: white;
+}
+
+h4 {
+	color: white;
+	margin: 2em 0 1em 0;
+}
+
+h4 span.colored {
+	color: #149c8e;
+}
+
+.formdiv {
+	width: 50% !important;
+	margin: 0 auto 0 auto;
+}
+
+.input-datas {
+	width: 80%;
+	margin: 0 auto 0 auto !important;
+
+	.form-control {
+		display: inline !important;
+		margin: 0 !important;
+		margin-right: 20px !important;
+		width: 60%;
+		font-size: 1.1em;
+		font-weight: bold;
+		color: #ed8036 !important;
+	}
+}
+
+.table {
+
+	width: 30% !important;
+	margin: 2em auto 0 auto !important;
+}
+
+button {
+	margin: 0 5px 0 5px !important;
+}
