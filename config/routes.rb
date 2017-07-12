@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # root 'hyperloop#helloworld'
   root 'home#helloworld'
   get '/greeter' => 'home#meeter_greeter'
+  get '/table' => 'hyperloop#stylish_table'
 end
