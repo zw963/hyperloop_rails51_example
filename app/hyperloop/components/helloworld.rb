@@ -1,4 +1,5 @@
 class Helloworld < Hyperloop::Component
+  # 注意, 下面的状态, 是如何设定默认值的. (必须有默认值!)
   state show_field: false
   state field_value: ''
 
@@ -7,7 +8,7 @@ class Helloworld < Hyperloop::Component
     if state.show_field
       DIV(class: 'formdiv') do
         show_input
-        H1 { state.field_value }
+        show_text
       end
     end
   end
@@ -28,12 +29,13 @@ class Helloworld < Hyperloop::Component
     end
 
     INPUT(type: :text, class: 'form-control').on(:change) do |e|
+      # 注意是如何改变一个状态的. mutate.state_name
       mutate.field_value e.target.value
     end
   end
 
   def show_text
+    # 下面是如何访问一个定义的状态的. state.state_name
     H1 { state.field_value }
   end
-
 end
