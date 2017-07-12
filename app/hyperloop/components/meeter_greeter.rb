@@ -3,8 +3,18 @@ class MeeterGreeter < Hyperloop::Component
     H1 { 'hello world' }
     # 这里的 SayHello 用法, 就像调用其他的组件.
     # 需要提及的一点是: 这里的 SayHello 和普通的 Html 标签用法是一样的.
-    # 可以理解为: 一个是原生标签(全部大写), 一个是自定义标签(驼峰式)
+    # 事实上, 所有原生 HTML 标签, 都被包装成了组件.
+    # 只不过原生标签全部大写, 而自定义标签采用驼峰式.
     # 由此看到了, 除了常规的 `标签 { ...}', 另一种用法是: `标签(...)'
+
+    # 根据文档:
+    # Everything in the brackets is passed to the Component as parameters
+    # and everything in the curly brace is rendered within the Component.
+    # you can with both, but never just MyComponent()
+
+    # 即:
+    # 要么, 给一个组件传递数据, 来 render 它.(就像我们当前做的.)
+    # 要么, 使用 block 来设定这个(原生)组件的 value.
     SayHelloTo(name: 'John')
     SayHelloTo(name: 'sally')
   end
