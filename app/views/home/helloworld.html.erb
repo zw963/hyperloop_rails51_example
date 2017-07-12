@@ -1,5 +1,12 @@
 <div class="hyperloophelloword">
   <div>
-    <%= react_component '::Helloworld', {}, { prerender: true } %>
+    <!-- 这里的 react_component 方法来自于 react-rails gem -->
+    <!-- 这个方法的签名如下: react_component(component_class_name, props={}, html_options={}) -->
+    <!-- 例如: react_component('HelloMessage', name: 'John') -->
+    <!-- 等价于: <div data-react-class="HelloMessage" data-react-props="{&quot;name&quot;:&quot;John&quot;}"></div> -->
+    <!-- 注意: 这种基于 data-react-class 的机制工作, 依赖 react_ujs. -->
+    <!-- prerender: true 表示从服务器端 render 这个组件. -->
+    <!-- 更多帮助, 查看 https://github.com/reactjs/react-rails#view-helper -->
+    <%= react_component '::Helloworld', {name: 'John'}, { prerender: true } %>
   </div>
 </div>
