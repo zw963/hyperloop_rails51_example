@@ -13,9 +13,11 @@
 
 // 这三行, 是 hyperloop 文档中要求加的, 而且必须在 hyperloop-loader 前面.
 // 虽然不知道 jquery_ujs 还有什么用.
+
 //= require react_ujs
 //= require jquery
 //= require jquery_ujs
+//= require google/gmaps
 
 //= require rails-ujs
 //= require turbolinks
