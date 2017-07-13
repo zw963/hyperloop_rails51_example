@@ -8,6 +8,6 @@
     <!-- 注意: 这种基于 data-react-class 的机制工作, 依赖 react_ujs. -->
     <!-- prerender: true 表示从服务器端 render 这个组件. -->
     <!-- 更多帮助, 查看 https://github.com/reactjs/react-rails#view-helper -->
-    <%= react_component '::Helloworld', {name: 'John'}, { prerender: true } %>
+    <%= react_component '::Helloworld', {}, { prerender: true } %>
   </div>
 </div>
