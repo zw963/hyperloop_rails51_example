@@ -16,6 +16,7 @@
 //= require react_ujs
 //= require jquery
 //= require jquery_ujs
+//= require react-player
 
 //= require rails-ujs
 //= require turbolinks
