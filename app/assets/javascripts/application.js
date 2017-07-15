@@ -18,6 +18,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require gmaps/gmaps.min
+//= require react-player/dist/ReactPlayer.js
 
 //= require rails-ujs
 //= require turbolinks
