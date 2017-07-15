@@ -17,7 +17,7 @@
 //= require react_ujs
 //= require jquery
 //= require jquery_ujs
-//= require google/gmaps
+//= require gmaps/gmaps.min
 
 //= require rails-ujs
 //= require turbolinks
