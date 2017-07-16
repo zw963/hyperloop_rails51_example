@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get '/greeter' => 'home#meeter_greeter'
   # 下面的代码演示了, 如何使用自己的路由.
   get '/table' => 'hyperloop#stylish_table'
+  get '/offer_lucky_dip' => 'hyperloop#offer_lucky_dip'
   get 'player' => 'hyperloop#player'
 end
