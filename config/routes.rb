@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get '/table' => 'hyperloop#stylish_table'
   get '/offer_lucky_dip' => 'hyperloop#offer_lucky_dip'
   get '/share_a_store' => 'hyperloop#share_a_store'
-  get 'player' => 'hyperloop#player'
+  get '/booklist' => 'hyperloop#book_list'
+  get '/player' => 'hyperloop#player'
 end
