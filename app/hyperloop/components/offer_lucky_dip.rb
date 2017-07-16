@@ -14,11 +14,16 @@ class Discounter < Hyperloop::Store
   end
 
   # 为这个 State 创建一个 Operation, Operation 可以表示一系列有顺序被执行的 step
+  # 将 Operation 类在他们操作的 State 类中定义, 是一个不错的最佳实践.
   class LuckyDipOp < Hyperloop::Operation
+    # check_tries 相当于对 tries 参数添加了一个验证.
     def check_tries
       puts Discounter.tries
+      # 这里通过调用 abort! 来宣告这个 step 失败.
+      # abort! 是 Hyperloop::Operation 实现的一个实例方法.
       abort! if Discounter.tries > 2
     end
+    # step 确保前一个执行成功后(验证成功), 下一个 step (修改状态的操作) 才被执行.
     step { check_tries }
     step { Discounter.lucky_dip! }
   end
