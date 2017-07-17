@@ -1,1 +1,1 @@
-require_tree './public' if RUBY_ENGINE == 'opal'
+require_tree './' if RUBY_ENGINE == 'opal'
