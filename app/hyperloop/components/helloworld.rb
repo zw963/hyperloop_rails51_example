@@ -1,3 +1,5 @@
+# 这是一个 React 默认风格的 Helloworld 程序.
+
 class Helloworld < Hyperloop::Component
   # 注意, 下面的状态, 是如何设定默认值的. (必须有默认值!)
   state show_field: false

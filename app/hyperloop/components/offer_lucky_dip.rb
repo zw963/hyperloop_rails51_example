@@ -1,6 +1,8 @@
+# 这个演示了 Components 和 Store 之间的自动交互.
+
+
 # 我们使用 store 来抽取 state 到一个单独的 Store.
 # 这有利于从 Component 单独抽取 `状态和业务逻辑` 出来.
-
 class Discounter < Hyperloop::Store
   # 这个 Discounter 即包含状态, 例如: state
   # 这里的 scope: :class, reader: true, 表示创建一个 reader 类方法.

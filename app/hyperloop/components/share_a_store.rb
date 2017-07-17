@@ -1,3 +1,5 @@
+# 这个演示了多个 Components 共享/操作 同一个 Store 的例子.
+
 # 这个类名称原本是: TopLevelComponent, 代表顶级组件, 用来包含其他组件的组件.
 # 但是直接用这个名字, 因为 share_a_store 不存在 ShareAStore 这个类, 不工作, 因此改名.
 class ShareAStore < Hyperloop::Component

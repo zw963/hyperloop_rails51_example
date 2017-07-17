@@ -1,3 +1,5 @@
+# 一个普通的 bootstrap 表格的例子.
+
 class StylishTable < Hyperloop::Component
   render(DIV) do
     TABLE(class: 'table table-bordered') do

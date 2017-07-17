@@ -1,3 +1,5 @@
+# 这个演示了如何在一个 Component 中调用其他的 Components
+
 class MeeterGreeter < Hyperloop::Component
   render(DIV) do
     H1 { 'hello world' }
@@ -17,5 +19,14 @@ class MeeterGreeter < Hyperloop::Component
     # 要么, 使用 block 来设定这个(原生)组件的 value.
     SayHelloTo(name: 'John')
     SayHelloTo(name: 'sally')
+  end
+end
+
+class SayHelloTo < Hyperloop::Component
+  # 下面的代码是可选的, 但是编译为 js 时会有更好的性能.
+  param :name, type: String
+
+  render(DIV) do
+    H4 { "Hello #{params.name}!" }
   end
 end
