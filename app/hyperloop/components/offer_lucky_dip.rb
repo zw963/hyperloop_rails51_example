@@ -14,7 +14,10 @@ class Discounter < Hyperloop::Store
   end
 
   # 为这个 State 创建一个 Operation, Operation 可以表示一系列有顺序被执行的 step
-  # 将 Operation 类在他们操作的 State 类中定义, 是一个不错的最佳实践.
+  # 因为这个 Operation 中硬编码了针对 Discounter 的操作, 因此, LuckyDipOp 类在他们操作的
+  # State 类中定义, 是一个不错的最佳实践.
+  # 在稍后的例子中, 将会看到, 将 Operation 和操作的 Store 解藕的办法.
+  # 通过 dispatch 和 receiver (Flux) 模式, 来进行交互.
   class LuckyDipOp < Hyperloop::Operation
     # check_tries 相当于对 tries 参数添加了一个验证.
     def check_tries
