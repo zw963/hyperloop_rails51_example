@@ -22,4 +22,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-//= require hyperloop-loader
+
+// 好吧, 原来的 require hyperloop-loader, 其实等价于下面的代码:
+//= require 'components'
+Opal.load('components');
