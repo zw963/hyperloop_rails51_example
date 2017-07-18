@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'hyperloop'
 gem 'webpacker'
+gem 'capistrano'
+gem 'capistrano-rvm'
+gem 'capistrano-rails'
