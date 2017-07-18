@@ -11,7 +11,7 @@ set :conditionally_migrate, true
 set :pid_dir, -> { "#{fetch(:deploy_to)}/shared/tmp/pids" }
 set :config_dir, -> { "#{fetch(:deploy_to)}/current/config" }
 set :containers_dir, -> { "#{fetch(:config_dir)}/containers" }
-set :puma_pid, -> { "#{fetch(:pid_dir)}/puma.app.hyperloop_rails51_example.pid" }
+set :puma_pid, -> { "#{fetch(:pid_dir)}/puma.pid" }
 set :puma_config, -> { "#{fetch(:containers_dir)}/app/config/puma_production.rb" }
 set :cable_pid, -> { "#{fetch(:pid_dir)}/cable.pid" }
 set :cable_config, -> { "#{fetch(:config_dir)}/cable.rb" }
