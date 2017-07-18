@@ -1,5 +1,5 @@
 upstream hyperloop_rails51_example_app_server {
-  server unix:/data_1/www/hyperloop_rails51_example/hyperloop_rails51_example_staging/shared/tmp/puma.app.hyperloop_rails51_example.sock fail_timeout=0;
+  server unix:/data_1/www/hyperloop_rails51_example/hyperloop_rails51_example_staging/shared/tmp/puma.sock fail_timeout=0;
 }
 
 server {

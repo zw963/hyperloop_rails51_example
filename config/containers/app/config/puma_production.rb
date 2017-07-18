@@ -1,6 +1,6 @@
 # -*- coding: utf-8; mode:ruby; -*-
 
-file = 'puma.app.hyperloop_rails51_example'
+file = 'puma'
 # port = ENV.fetch('DEFAULT_PORT', 3000)
 
 environment ENV.fetch('RAILS_ENV', 'production')
