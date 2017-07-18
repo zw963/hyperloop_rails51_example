@@ -18,11 +18,14 @@ module HyperloopRails51Example
     # 注意我们省略了修改 autoload_paths 数组, 因为这个数组总是包含 eager_load_paths 的内容.
     config.eager_load_paths += %W(#{config.root}/app/hyperloop/models)
     config.eager_load_paths += %W(#{config.root}/app/hyperloop/operations)
+    config.eager_load_paths += %W(#{config.root}/app/hyperloop/stores)
 
-    # TODO: 似乎 store 和 components 不需要 eager load ?
+    # TODO: 似乎 components 不需要 eager load ?
 
     config.assets.paths << ::Rails.root.join('app', 'hyperloop').to_s
     config.assets.paths << ::Rails.root.join('app', 'hyperloop', 'models').to_s
+
+    config.eager_load_paths -= %W(#{config.root}/app/hyperloop)
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
