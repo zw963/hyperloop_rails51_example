@@ -40,7 +40,7 @@ class OfferLuckyDip < Hyperloop::Component
     H1 { "Your discount is #{Discounter.discount}%" }
     BUTTON { 'Lucky Dip' }.on(:click) do
       # 之前这里直接调用类方法.
-      # 现在则传递一个 Operation 进来.
+      # 现在则传递一个 Operation 进来. (这里其实是一个 Promise 对象.)
       Discounter.LuckyDipOp
     end
   end
