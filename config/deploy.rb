@@ -24,6 +24,7 @@ set :linked_dirs, %w{
   tmp
   public/assets
   public/uploads
+  node_modules
 }
 
 # vendor/bundle
