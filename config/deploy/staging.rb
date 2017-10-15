@@ -1,7 +1,7 @@
-role :web, %w{hyperloop_rails51_example@47.89.26.177}
-role :app, %w{hyperloop_rails51_example@47.89.26.177}
-role :db, %w{hyperloop_rails51_example@47.89.26.177}
-role :worker, %w{hyperloop_rails51_example@47.89.26.177}
+role :web, %w{hyperloop_rails51_example@103.16.228.84}
+role :app, %w{hyperloop_rails51_example@103.16.228.84}
+role :db, %w{hyperloop_rails51_example@103.16.228.84}
+role :worker, %w{hyperloop_rails51_example@103.16.228.84}
 
 set :branch, 'dev'
 set :deploy_to, "/data_1/www/#{fetch(:application)}/#{fetch(:application)}_#{fetch(:stage)}"
