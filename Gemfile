@@ -58,3 +58,5 @@ gem 'webpacker'
 gem 'capistrano'
 gem 'capistrano-rvm'
 gem 'capistrano-rails'
+
+gem 'opal_hot_reloader'
