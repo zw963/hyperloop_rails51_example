@@ -16,14 +16,14 @@ class MeeterGreeter < Hyperloop::Component
 
     # 即:
     # 要么, 给一个组件传递数据, 来 render 它.(就像我们当前做的.)
-    # 要么, 使用 block 来设定这个(原生)组件的 value.
+    # 要么, 使用 block 来设定这个(原生)组件的 value, 或添加嵌套的组件.
     SayHelloTo(name: 'John')
     SayHelloTo(name: 'sally')
   end
 end
 
 class SayHelloTo < Hyperloop::Component
-  # 下面的代码是可选的, 但是编译为 js 时会有更好的性能.
+  # 下面的 type 是可选的???, 但是编译为 js 时会有更好的性能.
   param :name, type: String
 
   render(DIV) do
