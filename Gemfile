@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://gems.ruby-hyperloop.org'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -53,7 +54,9 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'hyperloop'
+gem 'opal-jquery', github: 'opal/opal-jquery', branch: 'master'
+gem 'opal-rails', github: 'opal/opal-rails', branch: 'master'
+gem 'hyperloop', '1.0.0-lap16'
 gem 'webpacker'
 
 gem 'opal_hot_reloader', group: :development
