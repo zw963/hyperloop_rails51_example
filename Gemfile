@@ -59,4 +59,4 @@ gem 'opal-rails', github: 'opal/opal-rails', branch: 'master'
 gem 'hyperloop', '1.0.0-lap16'
 gem 'webpacker'
 
-gem 'opal_hot_reloader', group: :development
+# gem 'opal_hot_reloader', group: :development
