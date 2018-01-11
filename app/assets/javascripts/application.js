@@ -11,17 +11,9 @@
 // about supported directives.
 //
 
-// 这三行, 是 hyperloop 文档中要求加的, 而且必须在 hyperloop-loader 前面.
-// 虽然不知道 jquery_ujs 还有什么用.
-//= require react_ujs
-//= require jquery
-//= require jquery_ujs
-
-//= require gmaps/gmaps.min
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
-
-// 好吧, 原来的 require hyperloop-loader, 其实等价于下面的代码:
-//= require 'components'
-Opal.load('components');
+//= require cable
+// require_tree .
+//= require hyperloop-loader
+// Opal.load('hyperloop-loader');

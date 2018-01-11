@@ -5,16 +5,10 @@
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= yield %>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWP3zdmZ1lraIuEI9QH31kZbXVLm99MLA"></script>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script>
-      $(function() {
-        page__shared__google_map_for_publish.init();
-      });
-    </script>
   </body>
 </html>

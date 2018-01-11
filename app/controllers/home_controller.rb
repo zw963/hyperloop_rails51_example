@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  def helloworld
+  def hello_world
   end
 
   def meeter_greeter

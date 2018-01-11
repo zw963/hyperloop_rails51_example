@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   mount Hyperloop::Engine => '/hyperloop'
 
-  root 'home#helloworld'
+  # root 'hyperloop#hello_world'
+  get '/hello_world' => 'hyperloop#hello_world'
   get '/greeter' => 'home#meeter_greeter'
   # 下面的代码演示了, 如何使用自己的路由.
   get '/table' => 'hyperloop#stylish_table'
